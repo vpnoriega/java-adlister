@@ -14,13 +14,13 @@ public class HelloWorldServlet extends HttpServlet {
 
         String name = request.getParameter("name");
 
-        if(name == null){
-            name = "Hello world!";
+        if (name == null) {
+            name = " world!";
         }
 
         response.getWriter().println("<h1>Hello " + name + "!" + "</h1>");
 
 
-
     }
+
 }
