@@ -10,7 +10,7 @@ import java.io.IOException;
 public class CounterServlet extends HttpServlet {
 
     // Create a page view counter
-    private int hitCount = 0;
+    private int hitCount = 0; //has to be outside the doGet
 
     //Create a page that displays a number that goes up by one every time the /count page is viewed.
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
