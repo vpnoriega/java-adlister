@@ -13,9 +13,14 @@
 <html>
 <head>
     <title>Login Page</title>
-    <link rel = "stylesheet" href="partials/css/stylesheet.css">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+    <%@ include file="partials/css/stylesheet.css" %>
+    </style>
+
+    </head>
 <body>
+<%@ include file="partials/navbar.jsp" %>
 
 <h1>Welcome to the Login Page!</h1>
 
@@ -33,6 +38,8 @@
 
 </p>
 
-<script src="partials/js/scripts.js"></script>
+<script>
+<%@ include file="partials/js/scripts.js" %>
+</script>
 </body>
 </html>
