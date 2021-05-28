@@ -9,7 +9,9 @@ import java.io.IOException;
 public class IncorrectServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-//        request.setAttribute("incorrectNumber", "You got it wrong :(");
+
+        String incorrectMsg = "You got it wrong :( ";
+        request.setAttribute("message", incorrectMsg);
         request.getRequestDispatcher("/correct.jsp").forward(request, response);
 
     }

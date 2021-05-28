@@ -24,9 +24,11 @@ public class GuessServlet extends HttpServlet {
         if (userInput != null) {
             if (Double.parseDouble(userInput) == randomNum) {
                 response.sendRedirect("/correct");
+
             } else {
                 response.sendRedirect("/incorrect");
             }
         }
     }
 }
+//get rid of response and then

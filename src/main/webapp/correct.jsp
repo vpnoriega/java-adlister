@@ -14,17 +14,8 @@
 </head>
 <body>
 
-<c:if test="${url.equals('correct')}">
-
-    <h1>You got it right!</h1>
-
-</c:if>
-
-<c:if test="${url.equals('/incorrect')}">
-
-    <h1>You got it wrong :(</h1>
-
-</c:if>
+    <h1>${message}</h1>
+<!-- looks for attribute since you sent it there -->
 
 </body>
 </html>
