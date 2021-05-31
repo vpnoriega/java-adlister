@@ -62,7 +62,7 @@ delivery address (text input).--%>
         <label for="toppings6">Bacon</label><br>
 
         <br>
-        <label for = "address">Please enter your address:</label><br>
+        <label for ="address">Please enter your address:</label><br>
         <input type="text" id="address" name="address"><br>
         <input type="submit" value="Submit">
     </div>
