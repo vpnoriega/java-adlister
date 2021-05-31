@@ -12,7 +12,7 @@ public class CorrectServlet extends HttpServlet {
         String correctMsg = "You got it right! :) ";
 
         request.setAttribute("message", correctMsg);
-        request.getRequestDispatcher("/correct.jsp").forward(request, response);
+        request.getRequestDispatcher("/outcome.jsp").forward(request, response);
 
 
     }
