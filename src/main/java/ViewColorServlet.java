@@ -10,7 +10,9 @@ public class ViewColorServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 
+        request.getParameterValues("userColor");
         request.getRequestDispatcher("/viewColor.jsp").forward(request,response);
+
 
     }
 }

@@ -12,5 +12,10 @@ public class PickColorServlet extends HttpServlet {
 
         request.getRequestDispatcher("/pickColor.jsp").forward(request,response);
 
+        String userColor=request.getParameter("userColor");
+        request.setAttribute("userColor","userColor");
+
+        response.sendRedirect("/viewcolor");
+
     }
 }

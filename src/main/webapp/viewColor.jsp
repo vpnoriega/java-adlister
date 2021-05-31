@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: vanessa
@@ -10,7 +11,7 @@
 <head>
     <title>View Color</title>
 </head>
-<body style="background-color: lightskyblue">
+<body style="background-color: ${userColor}">
 <h1>Here's your favorite color in action!</h1>
 
 </body>
