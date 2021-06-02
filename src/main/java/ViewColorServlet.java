@@ -15,4 +15,11 @@ public class ViewColorServlet extends HttpServlet {
 
 
     }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+        String userColor=request.getParameter("userColor");
+        request.setAttribute("userColor","userColor");
+
+        response.sendRedirect("/viewcolor");
+    }
 }

@@ -8,14 +8,12 @@ import java.io.IOException;
 @WebServlet(name = "PickColorServlet", urlPatterns = "/pickcolor")
 public class PickColorServlet extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        request.getRequestDispatcher("/pickColor.jsp").forward(request,response);
-
-        String userColor=request.getParameter("userColor");
-        request.setAttribute("userColor","userColor");
-
-        response.sendRedirect("/viewcolor");
-
+        request.getRequestDispatcher("/pickColor.jsp").forward(request, response);
     }
+
+
+
+
 }

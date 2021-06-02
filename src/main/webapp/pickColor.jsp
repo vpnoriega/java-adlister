@@ -11,7 +11,7 @@
     <title>Pick Color</title>
 </head>
 <body>
-<form action="/pickcolor" method="POST">
+<form action="/viewcolor" method="GET">
     <h1>Pick a Color!</h1>
     <div class="form-group">
         <label for="colorpick">Please tell me your favorite color to put it to work:</label><br>
