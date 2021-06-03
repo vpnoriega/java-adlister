@@ -16,6 +16,7 @@ public Author(int id, String firstName, String lastName) {
 
 public Author(){} //??what's the point of doing this
 
+    //has getters and setters for all instance variables
     public int getId() {
         return id;
     }

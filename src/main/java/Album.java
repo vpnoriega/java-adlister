@@ -1,5 +1,6 @@
 import java.io.Serializable;
 
+//implements the Serializable or Externalizable interface:
 public class Album implements Serializable {
     private int id;
     private String artist;
@@ -8,6 +9,7 @@ public class Album implements Serializable {
     private float sales;
     private String genre;
 
+    //provides a zero-argument constructor (used to initialize objects)
     public Album(int id, String artist, String name, int release_date, float sales, String genre){
         this.id = id;
         this.artist = artist;
@@ -19,6 +21,7 @@ public class Album implements Serializable {
 
     public Album(){}
 
+    //has getters and setters for all instance variables
     public int getId(){
         return id;
     }
