@@ -1,16 +1,16 @@
 import java.io.Serializable;
 
-//implements the Serializable or Externalizable interface:
+//implements the Serializable or Externalize interface:
 public class Album implements Serializable {
     private int id;
     private String artist;
     private String name;
     private int release_date;
-    private float sales;
+    private double sales;
     private String genre;
 
     //provides a zero-argument constructor (used to initialize objects)
-    public Album(int id, String artist, String name, int release_date, float sales, String genre){
+    public Album(int id, String artist, String name, int release_date, double sales, String genre){
         this.id = id;
         this.artist = artist;
         this.name = name;
@@ -55,11 +55,11 @@ public class Album implements Serializable {
         this.release_date = release_date;
     }
 
-    public float getSales(){
+    public double getSales(){
         return sales;
     }
 
-    public void setSales(float sales){
+    public void setSales(double sales){
         this.sales = sales;
     }
 

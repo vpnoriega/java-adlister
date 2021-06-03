@@ -14,7 +14,7 @@ public Author(int id, String firstName, String lastName) {
     this.lastName = lastName;
 }
 
-public Author(){} //??what's the point of doing this
+public Author(){} //??what's the point of doing this -- for the "new quote to instantiate a new object"
 
     //has getters and setters for all instance variables
     public int getId() {
